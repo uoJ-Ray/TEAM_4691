@@ -24,10 +24,12 @@ To obtain our results, please follow the commands below:
 
 ### Preprocessing
 Run
-- `python code/preprocess.py -output_file {TRAIN_FILE}` 
+- `python code/preprocess.py -data_dir {TRAIN_DIR} -output_file {TRAIN_FILE}` 
 
-Please replace the ``{TRAIN_FILE}`` to the path which you want to put the training data.
-A valid command example is ``python code/preprocess.py -output_file ./train.tsv``
+Please replace the {TRAIN_DIR}  to the directory which you put all of the training file (including the first phase and second phase dataset e.g. 1001.txt). {TRAIN_DIR} should contain 1120+614=1814 .txt files.
+
+Please replace {TRAIN_FILE} to the path which you want to put the training data.
+A valid command example is ``python code/preprocess.py -data_dir ./ -output_file ./train.tsv``
 
 ### Training
 Run these two commands for the training
