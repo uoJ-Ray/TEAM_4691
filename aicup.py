@@ -29,7 +29,7 @@ def collate_batch_with_prompt_template_t5(batch, tokenizer, template = "Extract 
 	
     batch = list(batch)
     for idx, data in enumerate(batch):
-        label = [i for i in data['label'].split('\\n') if 'DATE' not in i and 'TIME' not in i and 'DURATION' not in i]
+        label = [i for i in data['label'].split('\\n') if 'DATE' not in i and 'TIME' not in i and 'DURATION' not in i and 'SET:' not in i]
         label = "\\n".join(label)
         if label == "":
             label = "PHI:NULL"
