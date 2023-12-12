@@ -60,7 +60,7 @@ A valid example for each command is
 - ``python code/main.py -model_path ./model.pt -dataset ./opendid_test.tsv -output_file ./model.txt -test``
 - ``python code/main.py -model_path ./model_date.pt -dataset ./opendid_test.tsv -output_file ./model_date.txt -test``
 - ``python code/extract.py -dataset ./opendid_test -infile ./model.txt -infile_date ./model_date.txt -output_file extract.txt``
-- ``python code/chatgpt.py sk-xxx -data_dir ./opendid_test``
+- ``python code/chatgpt.py -api_key sk-xxx -data_dir ./opendid_test``
 - ``python code/date.py -data_dir ./opendid_test -dataset ./opendid_test.tsv -output_file date.txt``
 - ``cat extract.txt date.txt > final.txt``
 
