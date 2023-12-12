@@ -228,6 +228,8 @@ class Trainer(object):
                 for o in outputs:
                     f.write(o)
                     f.write('\n')
+                    print(o)
+                    
         # filename = self.config.output_file[:-4] + ".pkl"
         # with open(filename, "wb") as f:
         #     pkl.dump(predictions, f)
