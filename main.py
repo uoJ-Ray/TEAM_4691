@@ -1,6 +1,6 @@
 import json
 import os
-os.environ['CUDA_VISIBLE_DEVICES'] = '1'
+os.environ['CUDA_VISIBLE_DEVICES'] = '0'
 import random
 from argparse import ArgumentParser
 import numpy as np
